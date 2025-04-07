@@ -1,0 +1,7 @@
+APP_ID=19692872
+API_HASH=803249b1faaf2dcd4871d6b9eb46c614
+BOT_TOKEN=5092787930:AAGe5x5sEevHvjrS1ODtVgv1Xr5OYfYi9KY
+SUDO_USERS=1359873570, 7503742541
+THUMBNAIL=https://telegra.ph/file/9fba75d040c1e94950081.jpg
+FFMPEG =ffmpeg -i '''{}''' -preset ultrafast -c:v libx265 -crf 27 -map 0:v -c:a aac -map 0:a -c:s copy -map 0:s? '''{}''' -y
+LOG_CHANNEL=-1001885893314
