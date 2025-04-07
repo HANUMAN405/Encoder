@@ -36,18 +36,18 @@ ffmpeg.append("-map 0 -c:v libx265 -crf 24 -c:s copy  -s 1280x720 -preset veryfa
 try:
  api_id = 19692872  # Replace with your actual API ID
  api_hash = "803249b1faaf2dcd4871d6b9eb46c614"
-bot_token = "5092787930:AAGe5x5sEevHvjrS1ODtVgv1Xr5OYfYi9KY"
-DATABASE_URL = os.environ.get("DATABASE_URL") 
-BOT_USERNAME = "Bhrao_Amazing_Compressor_bot"
-MAX_MESSAGE_LENGTH = 4096
-download_dir = os.environ.get("DOWNLOAD_DIR", "downloads/")
+ bot_token = "5092787930:AAGe5x5sEevHvjrS1ODtVgv1Xr5OYfYi9KY"
+ DATABASE_URL = os.environ.get("DATABASE_URL") 
+ BOT_USERNAME = "Bhrao_Amazing_Compressor_bot"
+ MAX_MESSAGE_LENGTH = 4096
+ download_dir = os.environ.get("DOWNLOAD_DIR", "downloads/")
 
 # Add your SUDO user IDs directly
-sudo_users = list(set([
+ sudo_users = list(set([
     1359873570, 7503742541 # Add more if needed
-]))
+ ]))
 
-LOG_CHANNEL = -1001885893314  # Replace with your actual log channel ID
+ LOG_CHANNEL = -1001885893314  # Replace with your actual log channel ID
 except Exception as e:
  LOGS.info("ENV Are Missing")
 
