@@ -43,7 +43,7 @@ async def add_task(message: Message):
         os.remove(thumb)
         os.remove(og)
       else:
-        await msg.edit("**Error Contact @Hc_Cartoons**")
+        await msg.edit("**Error Contact @Hv_Cartoons**")
         os.remove(og)
     except MessageNotModified:
       pass
