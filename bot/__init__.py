@@ -35,7 +35,7 @@ ffmpeg = []
 ffmpeg.append("-map 0 -c:v libx265 -crf 24 -c:s copy  -s 1280x720 -preset veryfast -c:a libopus -ab 60k -vbr 2 -ac 2 -level 2.1")
 try:
  api_id = 19692872  # Replace with your actual API ID
-api_hash = "803249b1faaf2dcd4871d6b9eb46c614"
+ api_hash = "803249b1faaf2dcd4871d6b9eb46c614"
 bot_token = "5092787930:AAGe5x5sEevHvjrS1ODtVgv1Xr5OYfYi9KY"
 DATABASE_URL = os.environ.get("DATABASE_URL") 
 BOT_USERNAME = "Bhrao_Amazing_Compressor_bot"
