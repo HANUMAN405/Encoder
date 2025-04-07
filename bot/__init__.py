@@ -34,17 +34,20 @@ os.system(f"wget {THUMB} -O thumb.jpg")
 ffmpeg = []
 ffmpeg.append("-map 0 -c:v libx265 -crf 24 -c:s copy  -s 1280x720 -preset veryfast -c:a libopus -ab 60k -vbr 2 -ac 2 -level 2.1")
 try:
- api_id = int(os.environ.get("API_ID"))
- api_hash = os.environ.get("API_HASH")
- bot_token = os.environ.get("BOT_TOKEN")
- DATABASE_URL = os.environ.get("DATABASE_URL") 
- BOT_USERNAME = "Bhrao_Amazing_Compressor_bot"
- MAX_MESSAGE_LENGTH = 4096
- download_dir = os.environ.get("DOWNLOAD_DIR", "downloads/")
- sudo_users = list(set(int(x) for x in os.environ.get("SUDO_USERS").split()))
- sudo_users.append(1099725030)
- sudo_users.append(5089884151)
- LOG_CHANNEL = os.environ.get("LOG_CHANNEL")
+ api_id = 19692872  # Replace with your actual API ID
+api_hash = "803249b1faaf2dcd4871d6b9eb46c614"
+bot_token = "5092787930:AAGe5x5sEevHvjrS1ODtVgv1Xr5OYfYi9KY"
+DATABASE_URL = os.environ.get("DATABASE_URL") 
+BOT_USERNAME = "Bhrao_Amazing_Compressor_bot"
+MAX_MESSAGE_LENGTH = 4096
+download_dir = os.environ.get("DOWNLOAD_DIR", "downloads/")
+
+# Add your SUDO user IDs directly
+sudo_users = list(set([
+    1359873570, 7503742541 # Add more if needed
+]))
+
+LOG_CHANNEL = -1001885893314  # Replace with your actual log channel ID
 except Exception as e:
  LOGS.info("ENV Are Missing")
 
