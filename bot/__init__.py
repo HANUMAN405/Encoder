@@ -5,7 +5,7 @@ from logging.handlers import RotatingFileHandler
 from pyrogram import Client
 from dotenv import load_dotenv
 
-LOG_FILE_NAME = "Encoder@Log.txt"
+LOG_FILE_NAME = "Hanu@Log.txt"
 
 if os.path.exists(LOG_FILE_NAME):
     with open(LOG_FILE_NAME, "r+") as f_d:
@@ -29,7 +29,7 @@ logging.getLogger("urllib3").setLevel(logging.INFO)
 LOGS = logging.getLogger(__name__)
 
 
-THUMB = "https://te.legra.ph/file/2ebf402cdef8c27ab4648.jpg"
+THUMB = "https://telegra.ph/file/9fba75d040c1e94950081.jpg"
 os.system(f"wget {THUMB} -O thumb.jpg")
 ffmpeg = []
 ffmpeg.append("-map 0 -c:v libx265 -crf 24 -c:s copy  -s 1280x720 -preset veryfast -c:a libopus -ab 60k -vbr 2 -ac 2 -level 2.1")
@@ -48,7 +48,7 @@ try:
 except Exception as e:
  LOGS.info("ENV Are Missing")
 
-app = Client("nirusaki", api_id=api_id, api_hash=api_hash, bot_token=bot_token, workers=2)
+app = Client("HaNu", api_id=api_id, api_hash=api_hash, bot_token=bot_token, workers=2)
 0
 data = []
 
